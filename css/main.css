@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+/*------------------------------ COMMON SETTING START ------------------------------*/
+:root{
+    --primary-color:  #c98d83;
+    --secondary : #783b31;
+    --bg: #f2f1ec;
+    --black: #000;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    margin: 0%; 
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Vidaloka', sans-serif;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+/*------------------------------ COMMON SETTING END ------------------------------*/
+
+/*------------------------------ HEADER START ------------------------------*/
+header {
+    position: relative;
+    width: 100%;
+    background: var(--bg);
+    padding: 10px 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 350px;
+    height: 70px;
+    background: var(--secondary);
+    transition: 1s linear;
+    z-index: 1;
+}
+
+header .logo h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 28px;
+}
+
+header .logo h1 span{
+    color: var(--primary-color);
+    font-size: 30px; 
+}
+
+header nav{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav .menu{
+    font-size: 35px;
+    color: #000;
+}
+
+.bi.menu.bi-list {
+    position: absolute;
+    left: 100px;
+    top:20px;
+    z-index: 2;
+}
+
+header nav .right_menu{ 
+    display: flex;
+    align-items: center;
+}
+
+header nav .right_menu ul {
+    list-style-type : none;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav .right_menu ul li{
+    padding: 3px 10px;
+    margin-left: 1rem;
+}
+
+header nav .right_menu ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color:#000;
+    transition: .3s linear;
+}
+
+header nav .right_menu ul li a:hover{
+    position: relative;
+    text-decoration: none;
+    color: #783b31;
+    transition: .3s linear;
+}
+
+.dropdown {
+    float: left;
+    overflow: visible;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header nav .right_menu .user_cart{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header nav .right_menu .user_cart i{
+    position: relative;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header nav .right_menu .user_cart i:hover{
+    position: relative;
+    text-decoration: none;
+    color: #783b31;
+    transition: .3s linear;
+}
+
+header .left_menu{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+/*------------------------------ HEADER END ------------------------------*/
+
+/*------------------------------ FOOTER START ------------------------------*/
+.footer_container{
+    max-width: 1170px;
+	margin:auto;
+    background: var(--bg);
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: var(--bg);
+    padding: 20px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px; 
+}
+
+.footer-col h4{
+	font-size: 25px;
+	color: #000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--primary-color);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #000;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: var(--primary-color);
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: var(--secondary);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: var(--primary-color);
+}
+
+.footer .credit{
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border-top: .1rem solid var(--secondary);
+    background: var(--bg);
+}
+  
+.footer .credit span{
+    color: var(--secondary);
+    
+}
+
+/*------------------------------ RESPONSIVE START ------------------------------*/
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 900px) {
+	.bi.menu.bi-list {
+        position: absolute;
+        left: 10px;
+        top:10px;
+    }
+
+     header nav .right_menu ul{
+        display: none;
+    }
+
+}
+  
+@media screen and (max-width: 1250px) {
+    header nav .right_menu ul {
+        padding: 3px 10px;
+        margin-left: 1rem;
+        display: none;
+    }
+
+    .bi.menu.bi-list {
+        position: absolute;
+        left: 10px;
+        top:10px;
+    }
+
+    header{
+        padding: 30px;
+    }
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+  @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+/*------------------------------ RESPONSIVE END ------------------------------*/
+
+/*------------------------------ HEADER CONTAINER START ------------------------------*/
+.tablecontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	flex-flow: column;
+	background-color: var(--secondary);
+	min-height: 15rem;
+}
+
+.tablecontainer h1 {
+	font-size: 5rem;
+	color: var(--white);
+	text-transform: capitalize;
+}
+
+.tablecontainer p {
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.tablecontainer p a {
+	  color: #fff;
+    text-decoration: none;
+}
+
+.tablecontainer p a:hover {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
+
+.tablecontainer p span {
+    color: #fff;
+}
+/*------------------------------ HEADER CONTAINER END ------------------------------*/
+
+/*------------------------------ SHOPPING CART START ------------------------------*/
+.cart_action {
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    margin-right: 2%;
+    margin-top: -2%;
+    display: flex;
+    align-items: flex-start;
+}
+  
+.cart_action:hover{
+    color:#c98d83 ;
+}
+  
+.cart_action .material-icons-outlined {
+    margin-bottom: 4px; /* Adjust this value to move the icon up */
+}
+/*------------------------------ SHOPPING CART END ------------------------------*/
+
+/*------------------------------ PROFILE USER START ------------------------------*/
+.user_cart ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.icon{
+    margin-bottom:10px;
+}
+  
+.user_cart li {
+    list-style-type: none;
+    position: relative;
+    padding: 0.625rem 0 0.5rem;
+}
+  
+.user_cart li ul {
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    transition: all 0.5s ease;
+    width: 15rem;
+    right: -3rem;
+    top: 2.5rem;
+    border-radius: 0.325rem;
+    gap: 0;
+    padding: 1rem 0rem;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
+    display: none;
+}
+  
+.user_cart ul li:hover > ul,
+.user_cart ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+  
+.user_cart .material-icons-outlined {
+    color: #000;
+    transition: all 0.3s ease-out;
+}
+  
+.user_cart .material-icons-outlined:hover {
+    color: var(--secondary);
+    transform: scale(1.25) translateY(-4px);
+    cursor: pointer;
+}
+  
+.user_cart .sub-item {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 0.725rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+  
+.user_cart sub-item:hover {
+    background-color: rgba(232, 232, 232, 0.4);
+}
+  
+.user_cart .sub-item:hover .material-icons-outlined {
+    color: var(--secondary);
+    transform: scale(1.08) translateY(-2px);
+    cursor: pointer;
+}
+  
+.user_cart .sub-item:hover p a{
+    color: #000;
+    cursor: pointer;
+}
+  
+.user_cart .sub-item p a {
+    font-size: 1.0rem;
+    color: #888888;
+    font-weight: 600;
+    margin: 0.2rem 0;
+    flex: 1;
+}
+/*------------------------------ PROFILE USER END ------------------------------*/
+
+/*------------------------------ CART COUNT NUMBER START ------------------------------*/
+.cart-count {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: var(--secondary);
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 10px;
+    line-height: 1;
+}
+  
+  
+.cart-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    font-size: 20px; /* Adjust the font size as desired */
+    color: #fff; /* Set the desired color */
+    cursor: pointer;
+    margin-top: 5px;
+}
+  
+.cart-button:hover{
+    color: var(--primary-color);
+}
+  
+.cart_item_count {
+    position: absolute;
+    top: -8px; /* Adjust this value to align the number vertically */
+    right: -8px; /* Adjust this value to align the number horizontally */
+    background-color: var(--secondary); /* Optional: Set a background color for the number */
+    color: white; /* Optional: Set a text color for the number */
+    border-radius: 50%; /* Optional: Add rounded corners to the number */
+    padding: 2px 5px; /* Optional: Adjust the padding around the number */
+    font-size: 12px; /* Optional: Adjust the font size of the number */
+}
+/*------------------------------ CART COUNT NUMBER END ------------------------------*/
+
+/*------------------------------ SIDE NAVIGATION MENU START ------------------------------*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+}
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 0.5rem;
+    background: rgba( 242, 241, 236, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+  
+.side-bar {
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    font-family: "Poppins", sans-serif;
+}
+  
+.sidenav.active {
+    left: 0;
+}
+  
+.sidenav .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+  
+.sidenav .menu .item {
+    position: relative;
+    cursor: pointer;
+    color: #000;
+}
+  
+.sidenav .menu .item a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    line-height: 60px;
+}
+  
+.sidenav .menu .item a:hover {
+    color:var(--primary-color);
+    transition: 0.3s ease;
+}
+  
+.sidenav .menu .item i {
+    margin-right: 15px;
+}
+  
+.sidenav .menu .item .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+  
+.sub-menu {
+    display: none;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    display: none;
+}
+  
+.sub-menu.show {
+    display: block;
+}
+  
+.sub-menu a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+  
+.sub-menu a:hover {
+    background: rgba( 201, 141, 131, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #fff;
+}
+/*------------------------------ SIDE NAVIGATION MENU END ------------------------------*/

@@ -1,0 +1,76 @@
+/*------------------------------ CONTENT-CONTAINER START ------------------------------*/
+.content-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg);
+}
+/*------------------------------ CONTENT-CONTAINER END ------------------------------*/
+
+.popular {
+    display: block;
+    justify-content: center;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    padding:5% 25%;
+    background: var(--bg);
+}
+
+.user-details .user{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+ 
+.user-details .user img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 1rem;
+}
+ 
+.user-details .user p{
+    padding:1rem 5%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+ 
+.user-details .user p span{
+    color:black;
+}
+ 
+.user-details .user p i{
+    margin-right: 1rem;
+    color:black;
+}
+
+.btn{
+    display: block;
+    margin: 1rem 9%;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 80%;
+    font-size: 16px;
+    color:white;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--secondary);
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+}

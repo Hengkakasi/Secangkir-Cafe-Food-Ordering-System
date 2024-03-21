@@ -1,0 +1,263 @@
+.content-container{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: var(--bg);
+}
+
+.popular {
+  padding-top: 10px;
+  padding-bottom:20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 90px;
+  border: 1px solid var(--secondary);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+main {
+  width: 95%;
+  height: 100%;
+  margin: 20px;
+}
+
+.boxes-container {
+  margin-top: 50px;
+}
+
+.box {
+  width: 350px;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.box-content {
+  padding: 20px;
+}
+
+.box {
+  background-color: var(--bg);
+  border: 1px solid var(--secondary);
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.remark {
+  font-size: 18px;
+}
+
+.star {
+  color: gold; /* Change to your desired color */
+}
+
+.left-content {
+  float: left;
+  margin-right: 20px;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Poppins;
+}
+
+.popup .popup-content {
+  width: 400px;
+  height: 300px;
+  background: white;
+  box-shadow: 4px 4px 70px 10px rgb(0 0 0/11%);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.popup .popup-content .imgbox {
+  text-align: center;
+}
+
+.popup .popup-content .img {
+  width: 92px;
+  margin-top: 10px;
+}
+
+.popup .popup-content .title {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 10px;
+}
+
+.para {
+  font-weight: 500;
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: auto;
+}
+
+.sbutton {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 25px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+#s_button {
+  background: var(--secondary);
+}
+
+#s_button:hover {
+  background: var(--primary-color);
+}
+
+
+.products {
+  align-self: center;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1900px; /* Adjusted maximum width as needed */
+  margin: 50px 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
+
+.products h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.product {
+  position: relative;
+  background-color: white;
+  width: calc(25% - 30px); /* Adjusted flex-basis */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 40px;
+  border-radius: 10px;
+  transition: .3s;
+  margin-bottom: 30px; /* Added property for spacing between rows */
+}
+
+/* Rest of your existing CSS */
+
+
+.product:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.image {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.image img {
+  width: 240px;
+}
+
+.namePrice {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.namePrice h3 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  color: var(--textColor);
+}
+
+.namePrice span {
+  font-size: 1.0em;
+  color: var(--starColor);
+}
+
+.product p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+/* .stars svg {
+  font-size: 1.3em;
+  color: var(--starColor);
+} */
+
+.stars {
+  font-size: 2.5em; /* Adjust the size as needed */
+  color: gold; /* Set the color to your desired color */
+}
+
+.stars i.bi {
+  color: gold; /* Set the color to your desired color */
+  margin-bottom: 90px;
+}
+
+
+.bay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.bay p {
+  padding: 0px 0px;
+  border-radius: 7px;
+  border: none;
+  background-color: none;
+  color: #000;
+  font-size: 12px;
+  margin-bottom: -10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.bay button:hover {
+  transform: scale(1.1);
+}
+
+

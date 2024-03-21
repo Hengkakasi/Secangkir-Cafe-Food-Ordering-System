@@ -1,0 +1,168 @@
+.content-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg);
+}
+
+.content-container .receipt {
+    border: 1px solid #ccc;
+    padding: 3%;
+    width: 50%;
+    margin: 5% auto 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.receipt-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.Rheader {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.receipt-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.receipt-body .right{
+    text-align: right;
+}
+
+.receipt-body p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.receipt-items {
+    margin-top: 20px;
+}
+
+.receipt-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-items th,
+.receipt-items td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.receipt-items th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.receipt-total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.receipt-total p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.receipt-remark{
+    text-align: left;
+    padding: 2% 5%;
+}
+
+.receipt-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.receipt-remark p{
+    font-size: 14px;
+    color: black;
+}
+
+.receipt-footer p {
+    font-size: 14px;
+    color: #888;
+}
+
+.flex-btn{
+    display: flex;
+    gap: 1rem;
+    width: 40%;
+    margin: 0 auto 5% auto;
+}
+
+button,
+.option-btn{
+   display: block;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   cursor: pointer;
+   width: 100%;
+   font-size: 16px;
+   color:white;
+   padding: 0.5rem;
+   text-transform: capitalize;
+   text-align: center;
+   text-decoration: none;
+   border: none; /* Add this line to remove the border */
+}
+
+button{
+    background-color: var(--secondary);
+}
+
+.option-btn{
+    background-color: #8f3e00;
+}
+
+button:hover,
+.option-btn:hover{
+   background-color: var(--primary-color);
+   text-decoration: none;
+   color: white;
+}
+
+button:focus,
+.option-btn:focus{
+    text-decoration: none;
+    color: white;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .receipt, .receipt * {
+        visibility: visible;
+    }
+    .receipt {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        border: none;
+    }
+}

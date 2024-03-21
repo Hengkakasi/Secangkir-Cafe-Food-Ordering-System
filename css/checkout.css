@@ -1,0 +1,201 @@
+/*------------------------------ CONTENT-CONTAINER START ------------------------------*/
+.content-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg);
+}
+/*------------------------------ CONTENT-CONTAINER END ------------------------------*/
+
+/*------------------------------ POPULAR PART START ------------------------------*/
+.popular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 10%;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.popular .ordersummary{
+    flex-basis: 55%;
+}
+
+.popular .placeorder{
+    flex-basis: 40%;
+}
+
+.placeorder .form{
+    display: flex;
+    flex-direction: column;
+    gap:10px; /* Adjust the value to control the space between rows */
+}
+/*------------------------------ POPULAR PART END ------------------------------*/
+
+/*------------------------------ ORDER SUMMARY START ------------------------------*/
+.ordersummary{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin: 2%;
+    background: white;
+    border-radius: 20px;
+}
+
+.total:before,
+.total:after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg);
+}
+
+.total:before {
+    left: -15px;
+    border-radius: 20% 50% 50% 20%;
+}
+
+.total:after {
+    right: -15px;
+    border-radius: 50% 10% 10% 50%;
+}
+
+.ordersummary h2{
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+    height: 50px; /* Set the desired height */
+    width: 100%;
+    border-bottom: 1px solid rgb(242, 235, 235); /* Add a bottom border */
+    line-height: 40px; /* Adjust the line height to center the text vertically */
+}
+
+.ordersummary .OS-items {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.OS-items table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.OS-items th,
+.OS-items td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.OS-items th {
+    background-color: #f2f2f2;
+}
+
+.total {
+    padding-top: 2%;
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 3px dashed rgb(242, 235, 235);
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+	.popular {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+
+	.popular {
+		flex-direction: column;
+	}
+}
+/*------------------------------ ORDER SUMMARY END ------------------------------*/
+
+/*------------------------------ PLACE ORDER START ------------------------------*/
+.placeorder {
+    width: 90%;
+    margin: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    margin: 20px;
+}
+
+.remark h2{
+    margin-bottom: 20px;
+}
+
+.remark textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.takeMeal,
+.payment {
+    margin: 10px;
+}
+
+.takeMeal h2,
+.payment h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.takeMeal div,
+.payment div {
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+button[name="placeOrders"] {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[name="placeOrders"]:hover {
+    background-color: var(--primary-color);
+}
+/*------------------------------ PLACE ORDER END ------------------------------*/

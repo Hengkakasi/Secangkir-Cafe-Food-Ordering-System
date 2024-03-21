@@ -1,0 +1,301 @@
+/*------------------------------ CONTENT-CONTAINER START ------------------------------*/
+.content-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg);
+}
+
+.popular {
+    padding-top: 10px;
+    padding-bottom:20px;
+}
+
+/*------------------------------ CONTENT-CONTAINER END ------------------------------*/
+
+/*------------------------------ DATE PICKER START ------------------------------*/
+.row .dropdown{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+/*------------------------------ DATE PICKER END ------------------------------*/
+
+/*------------------------------ ORDER HISTORY START ------------------------------*/
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:5rem;
+    align-items: flex-start;
+    margin: 2% 10%;
+}
+
+.box-container .box{
+    text-align: left;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding:1.5rem;
+}
+
+.box-container .box h3{
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+.box-container .box p{
+    border-radius: .5rem;
+    border-radius: .5rem;
+    color:black;
+}
+
+.box-container .box p span{
+    color:rgb(18, 17, 17);
+}
+
+.box-container .order-box .box {
+    position: relative;
+}
+  
+
+.box-container .order-box .box .order-status-container {
+    width: 150px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+  
+.box-container .order-box .box .order-status-container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 15px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.box-container .box .order-status-container p {
+    margin: 0;
+}
+
+.box-container .box .order-status-container p span{
+    color: #fff;
+}
+
+.flex-btn{
+    display: flex;
+    gap:1rem;
+}
+
+.delete-btn,
+.option-btn{
+   display: block;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   cursor: pointer;
+   width: 100%;
+   font-size: 16px;
+   color:white;
+   padding: 0.5rem;
+   text-transform: capitalize;
+   text-align: center;
+   text-decoration: none;
+}
+
+.delete-btn{
+    background-color: var(--secondary);
+}
+ 
+.option-btn{
+    background-color: #8f3e00;
+}
+
+.rate-button {
+    color: white !important;
+}
+
+.delete-btn:hover,
+.option-btn:hover{
+   background-color: var(--primary-color);
+   text-decoration: none;
+   color: white;
+}
+
+.delete-btn:focus,
+.option-btn:focus{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width:450px){
+
+    html{
+       font-size: 50%;
+    }
+ 
+    .flex-btn{
+       flex-flow: column;
+       gap:0;
+    }
+ 
+    .heading{
+       font-size: 3rem;
+    }
+ 
+    .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+ }
+/*------------------------------ ORDER HISTORY END ------------------------------*/
+
+/*------------------------------ REVIEW START ------------------------------*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 25px;
+    color: #ccc;
+    width: 40px; /* Adjust the width to make the stars bigger */
+    height: 40px; /* Adjust the height to make the stars bigger */
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: "\2606";
+}
+
+.rating input:checked ~ label:before {
+    content: "\2605";
+    color: #ffcc00;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    display: block;
+    margin:  0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+#remark {
+    width: 100%; /* Adjust the width to fill the available space */
+    height: 200px; /* Adjust the height to make the textarea longer */
+    resize: vertical; /* Allow vertical resizing if needed */
+}
+
+
+.rating-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.rating-info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.info-value {
+    font-style: italic;
+}
+/*------------------------------ REVIEW END ------------------------------*/

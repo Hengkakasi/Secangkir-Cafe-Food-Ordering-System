@@ -1,0 +1,85 @@
+/*------------------------------ CONTENT-CONTAINER START ------------------------------*/
+.content-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg);
+}
+/*------------------------------ CONTENT-CONTAINER END ------------------------------*/
+
+.popular {
+    display: block;
+    justify-content: center;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    padding:5% 25%;
+    background: var(--bg);
+}
+
+.form-container form{
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+ 
+.form-container form h3{
+    font-size: 2.5rem;
+    color:black;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+ 
+.form-container form .box{
+    margin: 1rem 9%;
+    width: 80%;
+    border:.2rem solid var(--primary-color);
+    padding:1%;
+    font-size: 20px;
+}
+ 
+.form-container form p{
+    color:#777;
+    padding:1rem 5%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.btn{
+    display: block;
+    margin: 1rem 9%;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 80%;
+    font-size: 16px;
+    color:white;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--secondary);
+    border: none; /* Add this line to remove the border */
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+}
+
+.error-messages {
+    margin-top: 10px;
+}
+  
+.error-messages p {
+    margin: 5px 0;
+}

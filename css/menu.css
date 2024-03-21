@@ -1,0 +1,250 @@
+/*------------------------------ CONTENT-CONTAINER START ------------------------------*/
+.content-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg);
+}
+/*------------------------------ CONTENT-CONTAINER END ------------------------------*/
+
+/*------------------------------ FOOD SEARCH & CATEGORIES START ------------------------------*/
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+h2{
+    color: #000000 !important;
+    font-weight: 700 !important;
+}
+
+.container1 h2{
+    margin-bottom: 30px;
+}
+
+.categories h2 {
+    font-size: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.categories h3 {
+    font-size: 1.5rem;
+}
+/*------------------------------ FOOD SEARCH & CATEGORIES END ------------------------------*/
+
+/*------------------------------ FOOD SEARCH START ------------------------------*/
+.food-search {
+    padding-top: 2%;
+}
+  
+.food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn1 {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary1 {
+    background-color: var(--secondary);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary1:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+/*------------------------------ FOOD SEARCH END ------------------------------*/
+
+/*------------------------------ CATEGORIES START ------------------------------*/
+
+.categories {
+    padding: 1% 0;
+}
+
+.box-3 {
+    width: 19%;
+    float: left;
+    margin: 0 3%;
+    margin-bottom: 5%;
+}
+
+.float-container {
+    position: relative;
+}
+
+.error {
+    padding: 2%;
+    color: red;
+    width: 100%;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.img-curve {
+    border-radius: 15px;
+}
+
+.float-text {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-white {
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+/*------------------------------ CATEGORIES END ------------------------------*/
+
+/*------------------------------ LATEST DISHES START ------------------------------*/
+.popular {
+    padding-top: 10px;
+    padding-bottom:20px;
+    background-size: 100%;
+}
+
+.popular .container{
+    max-width: 1270px;
+    width: 90%;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #404048;
+}
+
+.food-item-wrap {
+    border: 1px solid #eaebeb;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: #fafaf8;
+}
+  
+.food-item-wrap h5 a {
+    color: #25282b;
+    font-size: 21px;
+    font-weight: 600;
+}
+  
+.food-item-wrap .title h2 {
+    font-size: 16px;
+    margin-bottom: 35px;
+    line-height: 21px;
+    font-weight: 300;
+}
+  
+.food-item-wrap .price {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 4px;
+    display: inline-block;
+}
+  
+.food-item-wrap .product-name {                 /* for description of the food */
+    margin-bottom: 20px;
+}
+  
+.food-item-wrap .content {
+    padding: 25px 15px 35px;
+}
+
+.food-item-wrap .content a{
+    cursor: default;
+}
+  
+.food-item-wrap .figure-wrap {
+    position: relative;
+    height: 210px;
+}
+  
+.food-item-wrap .figure-wrap:after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    background: url(../image/zig-zag.png);
+    filter: hue-rotate(250deg);
+    width: 100%;
+    height: 5px;
+    transform: scale(1.2);
+}
+  
+.food-item-wrap:hover h5 > a,
+.food-item-wrap:hover .right-text > a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-item-wrap .price-btn-block {
+      text-align: center;
+    }
+    .food-item-wrap .price-btn-block .price {
+      margin-bottom: 15px;
+      display: block;
+    }
+    .food-item-wrap .price-btn-block .btn {
+      float: none;
+    }
+}
+
+.btn.theme-btn-dash {
+    border: 2px dashed var(--secondary);
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+.btn.theme-btn-dash:hover{
+  background-color: var(--secondary);
+  color: #fff;
+  border: 1px solid var(--secondary);
+}
+/*------------------------------ LATEST DISHES START ------------------------------*/
+.cart-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    font-size: 20px; /* Adjust the font size as desired */
+    color: var(--secondary); /* Set the desired color */
+    cursor: pointer;
+    margin-top: 5px;
+    outline: none !important;
+}
+  
+.cart-button:hover{
+    color: var(--primary-color);
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+}
